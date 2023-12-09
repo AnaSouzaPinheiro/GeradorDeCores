@@ -1,0 +1,120 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "h1 h1 h1"
+      "rgb hex hsl";
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--poppins-font);
+    grid-template-columns: 33.3333333333vw 33.3333333333vw 33.3333333333vw;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .h1 {
+    grid-area: h1;
+    font-size: var(--large-font-size);
+    background: #2b2b2b;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .rgb {
+    grid-area: rgb;
+    background: var(--bgRGB-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .rgb button {
+    background: var(--bgRGB-color);
+  }
+
+  .rgb button:hover {
+    color: var(--bgRGB-color);
+    background: var(--contrast-color);
+  }
+
+  .hex {
+    grid-area: hex;
+    background: var(--bgHEX-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hex button {
+    background: var(--bgHEX-color);
+  }
+
+  .hex button:hover {
+    color: var(--bgHEX-color);
+    background: var(--contrast-color);
+  }
+
+  .hsl {
+    grid-area: hsl;
+    background: var(--bgHSL-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hsl button {
+    background: var(--bgHSL-color);
+  }
+
+  .hsl button:hover {
+    color: var(--bgHSL-color);
+    background: var(--contrast-color);
+  }
+
+  h2 {
+    font-size: var(--mid-font-size);
+  }
+
+  button {
+    grid-area: button;
+    padding: 15px;
+    margin: 15px 0;
+    border: 3px solid var(--contrast-color);
+    border-radius: 45px;
+    color: var(--contrast-color);
+    font-size: var(--button-font-size);
+    font-weight: bold;
+  }
+
+  span {
+    font-size: var(--small-font-size);
+  }
+
+  @media (max-width:768px) {
+    .container {
+    grid-template-areas:
+      "h1 h1 h1"
+      "rgb rgb rgb" 
+      "hex hex hex" 
+      "hsl hsl hsl";
+      grid-template-rows: 10vh 30vh 30vh 30vh;
+  }
+
+  h1 {
+    height: 10vh;
+    font-size: var(--mid-font-size);
+  }
+  }

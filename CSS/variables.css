@@ -1,0 +1,18 @@
+/* ======== VARIABLES =========*/
+:root {
+    font-size: 30%;
+    /* fonts type */
+    --poppins-font: "Poppins", sans-serif;
+
+    /* fonts size */
+    --large-font-size: 10rem;
+    --mid-font-size: 8rem;
+    --small-font-size: 5rem;
+    --button-font-size: 4rem;
+
+    /* colors */
+    --bgRGB-color: rgb(255, 255, 255);
+    --bgHEX-color: #ffffff;
+    --bgHSL-color: hsl(0, 0%, 100%);
+    --contrast-color: rgb(0, 0, 0);
+  }
